@@ -1,0 +1,7 @@
+voila
+pandas
+numpy
+matplotlib
+yfinance
+pypfopt
+ipywidgets
