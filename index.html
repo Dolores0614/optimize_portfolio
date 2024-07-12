@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Run My Jupyter Notebook</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Portfolio Optimizer</title>
 </head>
 <body>
-    <h1>Run My Jupyter Notebook</h1>
-    <p>Click the link below to run the notebook:</p>
-    <a href="https://mybinder.org/v2/gh/Dolores0614/optimize_portfolio/HEAD?filepath=optimize_portfolio.ipynb" target="_blank">Run Notebook</a>
+    <h1>Investment Portfolio Optimizer</h1>
+    <form action="/result" method="post">
+        <label for="tickers">Enter stock tickers (comma separated):</label><br>
+        <input type="text" id="tickers" name="tickers" required><br><br>
+
+        <label for="investment_amount">Enter investment amount:</label><br>
+        <input type="number" id="investment_amount" name="investment_amount" required><br><br>
+
+        <label for="risk_preference">Select risk preference:</label><br>
+        <select id="risk_preference" name="risk_preference">
+            <option value="1">Risk Averse</option>
+            <option value="2">Risk Neutral</option>
+            <option value="3">Risk Seeking</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
+
