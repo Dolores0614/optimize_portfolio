@@ -6,3 +6,4 @@ flask
 yfinance
 beautifulsoup4
 requests
+git+https://github.com/robertmartin8/PyPortfolioOpt.git
