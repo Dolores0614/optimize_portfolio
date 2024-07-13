@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Investment Portfolio Optimizer</h1>
-    <form action="/result" method="post">
+    <form action="/" method="post">
         <label for="tickers">Enter stock tickers (comma separated):</label><br>
         <input type="text" id="tickers" name="tickers" required><br><br>
 
@@ -23,6 +23,29 @@
 
         <button type="submit">Submit</button>
     </form>
-    <h2 id="result"></h2>
-</body>
-</html>
+
+    {% if result %}
+        <h2>Results:</h2>
+        {% if result.error %}
+            <p>Error: {{ result.error }}</p>
+        {% else %}
+            <h3>Optimal Weights:</h3>
+            <ul>
+                {% for ticker, weight in result.weights.items() %}
+                    <li>{{ ticker }}: {{ weight }}</li>
+                {% endfor %}
+            </ul>
+
+            <h3>Investment Allocation:</h3>
+            <ul>
+                {% for ticker, amount in result.allocation.items() %}
+                    <li>{{ ticker }}: {{ amount }} stocks</li>
+                {% endfor %}
+            </ul>
+
+            <p>Funds Remaining: ${{ result.leftover }}</p>
+
+            <h3>Portfolio Performance:</h3>
+            <p>Expected annual return: {{ result.performance[0] }}</p>
+            <p>Annual volatility: {{ result.performance[1] }}</p>
+            <p
