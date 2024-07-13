@@ -1,6 +1,6 @@
 Flask
 yfinance
-pypfopt==1.5.2
+pypfopt
 nltk
 beautifulsoup4
 requests
