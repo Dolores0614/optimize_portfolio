@@ -1,2 +1,3 @@
-# postBuild
-jupyter serverextension enable --sys-prefix voila
+#!/bin/bash
+python -m nltk.downloader vader_lexicon
+
