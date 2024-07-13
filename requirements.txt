@@ -1,6 +1,9 @@
-Flask
-yfinance
+numpy
+pandas
+matplotlib
+pypfopt
 nltk
+flask
+yfinance
 beautifulsoup4
 requests
-flask
