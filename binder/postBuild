@@ -1,5 +1,13 @@
 #!/bin/bash
+
+# Install dependencies from requirements.txt
 pip install -r requirements.txt
-python -m nltk.downloader vader_lexicon
-chmod +x start
-./start
+
+# Download NLTK data
+python -m nltk.downloader punkt
+
+# Ensure start script is executable
+chmod +x binder/start
+
+# Run the start script
+./binder/start
