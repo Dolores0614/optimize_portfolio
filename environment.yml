@@ -1,12 +1,14 @@
-name: optimize_portfolio
+name: myenv
 channels:
-  - defaults
+  - conda-forge
 dependencies:
   - python=3.8
-  - numpy
-  - pandas
-  - matplotlib
-  - pypfopt=1.4.2
-  - nltk
   - flask
+  - yfinance
+  - pypfopt
+  - nltk
+  - beautifulsoup4
+  - requests
   - pip
+  - pip:
+    - gunicorn
