@@ -1,7 +1,7 @@
-voila
-pandas
-numpy
-matplotlib
+
+Flask
 yfinance
 pypfopt
-ipywidgets
+nltk
+beautifulsoup4
+requests
