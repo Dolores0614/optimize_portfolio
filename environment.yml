@@ -5,10 +5,9 @@ dependencies:
   - python=3.8
   - flask
   - yfinance
-  - pypfopt
   - nltk
   - beautifulsoup4
   - requests
   - pip
   - pip:
-    - gunicorn
+    - pypfopt
