@@ -1,5 +1,6 @@
 #!/bin/bash
 pip install -r requirements.txt
+pip install --upgrade virtualenv
 pip install pypfopt
 pip install nltk
 python -m nltk.downloader vader_lexicon
