@@ -10,5 +10,3 @@ dependencies:
   - nltk
   - flask
   - pip
-  - pip:
-    - some_other_package
