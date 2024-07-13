@@ -1,6 +1,14 @@
 name: optimize_portfolio
+channels:
+  - defaults
 dependencies:
   - python=3.8
   - numpy
   - pandas
   - matplotlib
+  - pypfopt=1.4.2
+  - nltk
+  - flask
+  - pip
+  - pip:
+    - some_other_package
