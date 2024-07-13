@@ -1,8 +1,13 @@
 #!/bin/bash
+#!/bin/bash
+conda env create -f environment.yml
+echo "source activate myenv" >> ~/.bashrc
+source ~/.bashrc
+
 sudo pip3 install --upgrade pip
 sudo pip3 install virtualenv
 curl https://bootstrap.pypa.io/get-pip.py | python
-conda env create -f environment.yml
+
 source activate myenv
 pip install -r requirements.txt
 pip install pypfopt
